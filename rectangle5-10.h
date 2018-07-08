@@ -87,12 +87,9 @@ public:
 	{
 		return perimeter;
 	}
-
-	float print() {
-		cout << "R1 sum" << r(r1) << "r2 sum" << (r)r.2 <<endl;
-		
-
-	}
+	void print() {
+		cout << length << " " << width << " " << " " << area << endl;
+	 }
 
 };
 
