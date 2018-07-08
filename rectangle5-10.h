@@ -100,5 +100,11 @@ public:
 	{
 		return diff;
 	}
+	float rectangle510::operator<(diff r){
+	{
+			int sum;
+			diff = sum - r.sum;
+			return diff ;
+	}
 
 };
