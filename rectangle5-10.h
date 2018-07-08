@@ -15,12 +15,14 @@ Attach and submit the rectangle5-10.h with both parts a and b and the output .tx
 */
 class rectangle510
 {
-private:
+protected:
 	float length;
 	float width;
 	float area;
 	float perimeter;
 	float sum;
+	float diff;
+
 
 	
 
@@ -88,8 +90,15 @@ public:
 		return perimeter;
 	}
 	void print() {
-		cout << length << " " << width << " " << " " << area << endl;
+		cout << "length " << length << "width " << width << "area " << " " << area << " "  << " " << "Sum " <<sum << "diff " << diff << "\n";
 	 }
+	float getsum()
+	{
+		return sum;
+	}
+	float getdif()
+	{
+		return diff;
+	}
 
 };
-
