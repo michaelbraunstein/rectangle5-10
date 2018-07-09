@@ -100,11 +100,36 @@ public:
 	{
 		return diff;
 	}
-	float rectangle510::operator<(diff r){
+	bool rectangle510::operator>(rectangle510 r)
 	{
-			int sum;
-			diff = sum - r.sum;
-			return diff ;
+			if (sum > r.sum)
+			return true;
+			else
+			return false ;
 	}
 
-};
+	bool rectangle510::operator<(rectangle510 r)
+	{
+		if (sum < r.sum)
+			return true;
+		else
+			return false;
+	}
+	bool rectangle510::operator==(rectangle510 r)
+	{
+		if (sum == r.sum)
+			return true;
+		else
+			return false;
+	}
+	bool rectangle510::operator!=(rectangle510 r)
+	{
+		if (sum != r.sum)
+			return true;
+		else
+			return false;
+	}
+
+	 
+
+;
