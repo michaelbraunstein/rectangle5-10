@@ -17,7 +17,7 @@ void main()
 		cout << "r1 has a greater area\n";
 	else if (r1 < r2)
 		cout << "r1 has a less area\n";
-	else if (r1 == r2)
+	else if (r1 == r2)	
 		cout << "r1 and r2 have the same area\n";
 	if (r1 != r2)
 		cout << "Not equal\n";
@@ -27,4 +27,6 @@ void main()
 	r1.print();
 	cout << "Rectangle 2\n";
 	r2.print();
+
+	system("pause");
 }

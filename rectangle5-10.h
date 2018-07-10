@@ -1,5 +1,5 @@
 /* Michael Braunstein
-Exercise 5-1 header file
+Exercise 5-10 header file
 This class will define a rectangle
 
 5-10.    a.    Modify the rectangle class from 5-8b (shown above and attached) so rectangles
@@ -13,6 +13,9 @@ Use the following ex5-10.cpp and create the corresponding rectangle5-10.h header
 Attach and submit the rectangle5-10.h with both parts a and b and the output .txt file.
 
 */
+
+#include<iostream>
+using namespace std;
 class rectangle510
 {
 protected:
@@ -24,12 +27,12 @@ protected:
 	float diff;
 
 
-	
+
 
 public:
-	
 
-	rectangle510(float l,float w)
+
+	rectangle510(float l, float w)
 	{
 		setlength(l);
 		setwidth(w);
@@ -38,10 +41,10 @@ public:
 	}
 	float operator+(rectangle510 r)
 	{
-		float sum; 
+		float sum;
 		sum = (length + width) + (r.getlength() + r.getwidth());
 		return sum;
-		
+
 
 	}
 
@@ -62,7 +65,7 @@ public:
 	{
 		width = w;
 	}
- 
+
 
 	void calcarea()
 	{
@@ -90,46 +93,43 @@ public:
 		return perimeter;
 	}
 	void print() {
-		cout << "length " << length << "width " << width << "area " << " " << area << " "  << " " << "Sum " <<sum << "diff " << diff << "\n";
-	 }
+		cout << "length " << length << "width " << width << "area " << " " << area << " " << " " << "Sum " << sum << "diff " << diff << "\n";
+	}
 	float getsum()
 	{
 		return sum;
 	}
-	float getdif()
+	bool getdif()
 	{
 		return diff;
 	}
-	bool rectangle510::operator>(rectangle510 r)
+	bool operator>(rectangle510 r)
 	{
-			if (sum > r.sum)
+		if (sum > r.sum)
 			return true;
-			else
-			return false ;
+		else
+			return false;
 	}
 
-	bool rectangle510::operator<(rectangle510 r)
+	bool operator <(rectangle510 r)
 	{
 		if (sum < r.sum)
 			return true;
 		else
 			return false;
 	}
-	bool rectangle510::operator==(rectangle510 r)
+	bool operator ==(rectangle510 r)
 	{
 		if (sum == r.sum)
 			return true;
 		else
 			return false;
 	}
-	bool rectangle510::operator!=(rectangle510 r)
+	bool operator!=(rectangle510 r)
 	{
 		if (sum != r.sum)
 			return true;
 		else
 			return false;
 	}
-
-	 
-
-;
+};
